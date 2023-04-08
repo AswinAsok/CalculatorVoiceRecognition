@@ -1,0 +1,129 @@
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  input[type="text"] {
+    width: 80%;
+    height: 60px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+  }
+  
+  .keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+  }
+  
+  button {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #d4d4d4;
+  }
+  
+  button:active {
+    background-color: #bfbfbf;
+  }
+  
+  .operator {
+    background-color: #ffa500;
+    color: #fff;
+  }
+  
+  .operator:hover {
+    background-color: #e59400;
+  }
+  
+  .operator:active {
+    background-color: #cc7a00;
+  }
+  
+  button[name="0"] {
+    grid-column: span 2;
+  }
+  
+  button[name="."] {
+    grid-row: 5;
+  }
+  
+  button[name="="] {
+    grid-row: span 2;
+    background-color: #008CBA;
+    color: #fff;
+  }
+  
+  button[name="="]:hover {
+    background-color: #006380;
+  }
+  
+  button[name="="]:active {
+    background-color: #005073;
+  }
+  
+  button:last-child {
+    grid-column: span 2;
+    background-color: #8B0000;
+    color: #fff;
+  }
+  
+  button:last-child:hover {
+    background-color: #760000;
+  }
+  
+  button:last-child:active {
+    background-color: #5C0000;
+  }
+  
+  button:first-child {
+    grid-column: span 2;
+  }
+  
+  button:nth-child(3),
+  button:nth-child(8),
+  button:nth-child(13),
+  button:last-child {
+    grid-row: span 2;
+  }
+  
+  button:nth-child(4),
+  button:nth-child(8),
+  button:nth-child(12),
+  button:nth-child(16) {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  
+  button:nth-child(4):hover,
+  button:nth-child(8):hover,
+  button:nth-child(12):hover,
+  button:nth-child(16):hover {
+    background-color: #3e8e41;
+  }
+  
+  button:nth-child(4):active,
+  button:nth-child(8):active,
+  button:nth-child(12):active,
+  button:nth-child(16):active {
+    background-color: #2e6530;
+  }
+  
